@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "heptagon-inc",
+  "version": "0.1.0",
+  "owner": {
+    "name": "youyo"
+  },
+  "plugins": [
+    {
+      "name": "copilot",
+      "description": "GitHub Copilot CLI を Claude Code から呼び出し、コード・PR・実装計画のレビューと Web 調査をエージェントが自律的に実行できるスキル群。",
+      "source": "./plugins/copilot",
+      "category": "productivity",
+      "homepage": "https://github.com/youyo/claude-plugins/tree/main/plugins/copilot"
+    }
+  ]
+}
