@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "heptagon-inc",
-  "version": "0.1.0",
+  "name": "youyo",
+  "version": "0.1.1",
   "owner": {
     "name": "youyo"
   },

@@ -1,7 +1,7 @@
 {
   "name": "copilot",
   "description": "Use GitHub Copilot CLI from Claude Code for code, PR, and plan reviews.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": { "name": "youyo" },
   "homepage": "https://github.com/youyo/claude-plugins/tree/main/plugins/copilot",
   "license": "MIT"
