@@ -12,6 +12,13 @@
       "source": "./plugins/copilot",
       "category": "productivity",
       "homepage": "https://github.com/youyo/claude-plugins/tree/main/plugins/copilot"
+    },
+    {
+      "name": "logvalet",
+      "description": "Backlog 向け LLM-first CLI logvalet を Claude Code から自律起動する 14 スキル（情報収集・分析・アクション・レポート）。CLI バイナリは別途インストールが必要。",
+      "source": "./plugins/logvalet",
+      "category": "productivity",
+      "homepage": "https://github.com/youyo/claude-plugins/tree/main/plugins/logvalet"
     }
   ]
 }
