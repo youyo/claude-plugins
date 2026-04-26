@@ -6,11 +6,11 @@ GitHub Copilot CLI (`@github/copilot`) を Claude Code から呼び出し、エ�
 
 | スキル | 用途 |
 |---|---|
-| `copilot-code-review` | ローカル git 差分のコードレビュー |
-| `copilot-adversarial-review` | 設計選択・前提への批判的レビュー |
-| `copilot-pr-review` | GitHub PR のレビュー |
-| `copilot-plan-review` | 実装計画ドキュメントのレビュー |
-| `copilot-web-research` | Web 調査サブエージェント（一次情報の収集と構造化要約） |
+| `copilot:code-review` | ローカル git 差分のコードレビュー |
+| `copilot:adversarial-review` | 設計選択・前提への批判的レビュー |
+| `copilot:pr-review` | GitHub PR のレビュー |
+| `copilot:plan-review` | 実装計画ドキュメントのレビュー |
+| `copilot:web-research` | Web 調査サブエージェント（一次情報の収集と構造化要約） |
 
 これらは人間が `/<command>` で呼ぶことを想定しておらず、エージェントが文脈に応じて自律起動する。各 SKILL.md の `description` にトリガーワードを多数埋め込んである。
 
@@ -38,7 +38,7 @@ GitHub Copilot CLI (`@github/copilot`) を Claude Code から呼び出し、エ�
 ## Claude WebSearch との使い分け
 
 - **WebSearch**: シンプルな lookup、Claude メインコンテキスト内で完結したい場合
-- **copilot-web-research**: 深い調査（xhigh effort）、別モデル視点、コンテキスト分離が有効な場合
+- **copilot:web-research**: 深い調査（xhigh effort）、別モデル視点、コンテキスト分離が有効な場合
 
 ## コスト管理 / クォータ
 

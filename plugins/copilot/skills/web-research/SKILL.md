@@ -1,5 +1,5 @@
 ---
-name: copilot-web-research
+name: web-research
 description: GitHub Copilot CLI を Web 調査サブエージェントとして起動し、公式・一次情報を
 収集して構造化された調査メモを返す。training data の knowledge cutoff より新しい情報の確認、
 推測ではなく一次情報による裏付けが必要なときに自律起動する。Claude 組み込み WebSearch との

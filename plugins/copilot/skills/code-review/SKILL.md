@@ -1,5 +1,5 @@
 ---
-name: copilot-code-review
+name: code-review
 description: GitHub Copilot CLI を使ってローカルの git 変更（staged/unstaged/コミット差分）を読み取り専用でコードレビューする。コード品質・バグ・セキュリティ脆弱性・型エラー・ロジック誤り・命名・可読性・パフォーマンス問題を第三者視点で検出したいときに使う。トリガー: コードレビュー / code review / レビューして / セルフレビュー / self-review / second opinion / セカンドオピニオン / 別の AI に見てもらう / 第三者レビュー / バグ探し / コード品質チェック / 実装をチェック / git diff のレビュー / 差分レビュー / コミット前チェック / pre-commit review / PR を出す前に確認 / 実装後の品質確認 / Copilot にレビュー / GitHub Copilot で確認。実装直後・コミット前・PR 作成前に自律的に呼び出すと有効。書き込み・編集はせずレビュー結果のみ返す。
 ---
 
