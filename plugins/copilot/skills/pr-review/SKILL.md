@@ -1,5 +1,5 @@
 ---
-name: pr-review
+name: copilot:pr-review
 description: GitHub Copilot CLI を使って GitHub Pull Request を読み取り専用でレビューする。PR の本文・メタデータ・差分を取得し、コード品質・設計・セキュリティ・テスト網羅性などを第三者視点で評価する。PR 番号を明示しない場合は現在ブランチの PR を自動検出する。トリガー: PR レビュー / pull request review / プルリクのレビュー / PR を見て / GitHub の PR をチェック / マージ前レビュー / merge 前確認 / レビュー依頼 / PR 品質チェック / PR の妥当性 / PR の差分を確認 / プルリクの second opinion / Copilot で PR レビュー / GitHub PR を別 AI でチェック / 自分の PR をセルフレビュー / レビュアー視点で確認。PR 作成直後やマージ前に自律的に呼び出すと有効。
 ---
 

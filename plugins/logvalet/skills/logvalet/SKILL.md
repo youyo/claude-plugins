@@ -1,5 +1,5 @@
 ---
-name: logvalet
+name: logvalet:logvalet
 description: >
   Backlog 向け LLM-first CLI「logvalet」の PM メタモデル。
   全スキルの使い方・組み合わせ・ワークフローを案内するハブスキル。
