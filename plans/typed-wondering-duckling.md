@@ -171,7 +171,7 @@ sequenceDiagram
     User->>CC: /plugin marketplace add youyo/claude-plugins
     CC->>MP: marketplace.json 取得
     MP-->>CC: plugins[] (copilot, logvalet)
-    User->>CC: /plugin install logvalet@heptagon-inc
+    User->>CC: /plugin install logvalet@youyo
     CC->>MP: ./plugins/logvalet 取得
     MP-->>CC: plugin.json + skills/* 14 件
     CC->>CC: skills を logvalet:<frontmatter-name> 名で登録
@@ -289,7 +289,7 @@ plugins/logvalet/
    ```
    | [`logvalet`](./plugins/logvalet/) | Backlog 向け LLM-first CLI logvalet を ... |
    ```
-2. インストール例に追記: `/plugin install logvalet@heptagon-inc`
+2. インストール例に追記: `/plugin install logvalet@youyo`
 3. 「copilot プラグイン > 提供スキル」表内のスキル名を新表示名に書き換え:
    - `copilot-code-review` → `copilot:code-review`
    - `copilot-adversarial-review` → `copilot:adversarial-review`
@@ -316,7 +316,7 @@ plugins/logvalet/
 
 ### Step 22: 手動動作確認
 
-- [ ] `/plugin marketplace add youyo/claude-plugins` 後の `/plugin install logvalet@heptagon-inc` が成功
+- [ ] `/plugin marketplace add youyo/claude-plugins` 後の `/plugin install logvalet@youyo` が成功
 - [ ] Claude Code 再起動後、available skills 一覧で以下が確認できる:
   - `logvalet:context`, `logvalet:my-next`, ... (13 件、すべて単一 namespace)
   - `logvalet:logvalet` (ハブ、二重表示は許容)

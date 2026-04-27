@@ -106,7 +106,7 @@ echo $PATH
 
 ```
 /plugin marketplace add youyo/claude-plugins
-/plugin install logvalet@heptagon-inc
+/plugin install logvalet@youyo
 ```
 
 同名プラグインの重複インストールは予測不能な動作につながります。

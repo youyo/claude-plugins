@@ -4,7 +4,7 @@ Heptagon の Claude Code マーケットプレース。社内エージェント�
 
 ## マーケットプレース情報
 
-- **名前**: `heptagon-inc`
+- **名前**: `youyo`
 - **オーナー**: youyo
 - **バージョン**: 0.1.0
 
@@ -26,8 +26,8 @@ Claude Code でこのマーケットプレースを追加:
 その後、利用したいプラグインをインストール:
 
 ```
-/plugin install copilot@heptagon-inc
-/plugin install logvalet@heptagon-inc
+/plugin install copilot@youyo
+/plugin install logvalet@youyo
 ```
 
 ## copilot プラグイン
