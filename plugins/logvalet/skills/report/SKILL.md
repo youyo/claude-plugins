@@ -53,21 +53,30 @@ If **user names** are given, resolve to IDs:
 lv user list -f json
 ```
 
+From the JSON response, use the **`id` field (numeric integer)** for each user.
+Do NOT use the `userId` field (which starts with `*` and is not accepted by `user activity`).
+
 ### Step 3: Resolve period dates
+
+`user activity` コマンドは RFC3339 形式（ISO 8601）の日時文字列を受け付ける。
 
 | 指定 | since | until |
 |------|-------|-------|
-| `this-month` | 今月1日 (YYYY-MM-01) | 今日 (YYYY-MM-DD) |
-| `last-month` | 先月1日 | 先月末日 |
-| `YYYY-MM-DD:YYYY-MM-DD` | そのまま使用 | そのまま使用 |
+| `this-month` | `YYYY-MM-01T00:00:00Z` | `YYYY-MM-DDT23:59:59Z`（今日） |
+| `last-month` | `YYYY-MM-01T00:00:00Z`（先月1日） | `YYYY-MM-DDT23:59:59Z`（先月末日） |
+| `YYYY-MM-DD:YYYY-MM-DD` | `YYYY-MM-DDT00:00:00Z` | `YYYY-MM-DDT23:59:59Z` |
 
 ### Step 4: Fetch activity data
 
 For **each member**, fetch activities:
 
 ```bash
-lv user activity USER_ID --since YYYY-MM-DD --until YYYY-MM-DD --limit 1000 -f json
+lv user activity USER_ID --since YYYY-MM-DDT00:00:00Z --until YYYY-MM-DDT23:59:59Z -f json
 ```
+
+- `USER_ID` には `lv user list` の `id` フィールド（数値）を使う
+- `--since`/`--until` は RFC3339 形式（`YYYY-MM-DDT00:00:00Z`）で指定する
+- `--limit` は不要（CLIが自動ページネーションで全件取得する）
 
 Run multiple members **in parallel** (multiple Bash tool calls in one message).
 
