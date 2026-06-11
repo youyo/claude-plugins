@@ -40,7 +40,7 @@ logvalet configure --init-profile <プロフィール名> \
 
 ## 提供スキル
 
-14 個の logvalet スキルを提供（表示名は `logvalet:<skill>` 形式）:
+15 個の logvalet スキルを提供（表示名は `logvalet:<skill>` 形式）:
 
 | スキル | 用途 |
 |---|---|
@@ -58,6 +58,7 @@ logvalet configure --init-profile <プロフィール名> \
 | `logvalet:spec-to-issues` | 仕様書→課題タスク分割 |
 | `logvalet:report` | プロジェクト・チーム報告書生成 |
 | `logvalet:digest-periodic` | 日次・週次・月次ダイジェスト |
+| `logvalet:document-search` | Backlog ドキュメントをキーワードで横断検索 |
 
 これらはエージェントが自律起動する（`/command` で明示呼び出ししない）。各スキルの `description` に豊富なトリガーワード（日本語・英語・別名）が埋め込まれており、Claude Code が自動発火する。
 
